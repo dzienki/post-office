@@ -1,0 +1,3 @@
+C:/Users/Sztajer/CLionProjects/poczta/cmake-build-debug/CMakeFiles/poczta.dir
+C:/Users/Sztajer/CLionProjects/poczta/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Sztajer/CLionProjects/poczta/cmake-build-debug/CMakeFiles/rebuild_cache.dir
