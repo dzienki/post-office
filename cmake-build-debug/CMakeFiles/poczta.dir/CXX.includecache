@@ -45,6 +45,8 @@ postoffice.cpp
 C:/Users/Sztajer/CLionProjects/poczta/postoffice.cpp
 client.cpp
 C:/Users/Sztajer/CLionProjects/poczta/client.cpp
+assert.h
+-
 
 C:/Users/Sztajer/CLionProjects/poczta/postoffice.cpp
 postoffice.h
@@ -53,4 +55,12 @@ C:/Users/Sztajer/CLionProjects/poczta/postoffice.h
 C:/Users/Sztajer/CLionProjects/poczta/postoffice.h
 ipostoffice.h
 C:/Users/Sztajer/CLionProjects/poczta/ipostoffice.h
+string
+-
+fstream
+-
+iostream
+-
+client.h
+C:/Users/Sztajer/CLionProjects/poczta/client.h
 

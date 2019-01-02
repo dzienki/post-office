@@ -19,7 +19,7 @@ public:
     /**
      * @brief create Creates an instance of default implementation of this interface.
      * @param gate_count Number of available client gates in the office building.
-     * @return Shared pointer to instance of default implementation of this interface.
+     * @returni Shared pointer to instance of default implementation of this nterface.
      */
     static std::shared_ptr<IPostOffice> create(unsigned gate_count);
 

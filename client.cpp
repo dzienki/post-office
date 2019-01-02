@@ -30,15 +30,16 @@ Client::Client(const std::string &IdNumber) {
 }
 
 void Client::setFullName(const std::string &fullName) {
+    this->m_fullName=fullName;
 
 }
 
 void Client::updatePriority(int priority) {
-
+    this->m_priority=priority;
 }
 
 void Client::updateBiometricData(const std::string &biometricData) {
-
+    this->m_biometricData=biometricData;
 }
 
 bool Client::verifyBiometricData(const std::string &biometricData, double threshold) {

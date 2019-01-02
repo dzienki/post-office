@@ -4,10 +4,11 @@
 
 #include "postoffice.h"
 std::shared_ptr<IPostOffice> IPostOffice::create(unsigned gate_count) {
-    return std::shared_ptr<IPostOffice>();
+    return std::shared_ptr<IPostOffice>(new Postoffice(gate_count));
 }
 
 Postoffice::Postoffice(unsigned gate_count) {
+    this->gateCount=gate_count;
 
 }
 
