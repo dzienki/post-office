@@ -26,6 +26,7 @@ Client::~Client() {
 }
 
 Client::Client(const std::string &IdNumber) {
+    this->client_IdNumber=IdNumber;
 
 }
 
@@ -33,7 +34,7 @@ void Client::setFullName(const std::string &fullName) {
     this->client_fullName=fullName;
 
 }
-+
+
 void Client::updatePriority(int priority) {
     this->client_priority=priority;
 }
@@ -51,7 +52,7 @@ void Client::newPackage(const std::string &packageId) {
 }
 
 std::vector<std::string> Client::awaitingPackages() {
-    return std::vector<std::string>();
+    return packages;
 }
 
 void Client::packagesCollected() {
