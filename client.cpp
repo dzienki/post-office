@@ -6,19 +6,19 @@
 
 
 std::string Client::getIdNumber() {
-    return m_IdNumber;
+    return client_IdNumber;
 }
 
 std::string Client::getFullName() {
-    return m_fullName;
+    return client_fullName;
 }
 
 int Client::getPriority() {
-    return m_priority;
+    return client_priority;
 }
 
 const std::string &Client::getBiometricData() {
-    return m_biometricData;
+    return client_biometricData;
 }
 
 Client::~Client() {
@@ -30,16 +30,16 @@ Client::Client(const std::string &IdNumber) {
 }
 
 void Client::setFullName(const std::string &fullName) {
-    this->m_fullName=fullName;
+    this->client_fullName=fullName;
 
 }
-
++
 void Client::updatePriority(int priority) {
-    this->m_priority=priority;
+    this->client_priority=priority;
 }
 
 void Client::updateBiometricData(const std::string &biometricData) {
-    this->m_biometricData=biometricData;
+    this->client_biometricData=biometricData;
 }
 
 bool Client::verifyBiometricData(const std::string &biometricData, double threshold) {

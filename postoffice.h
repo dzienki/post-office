@@ -21,10 +21,10 @@ public:
     void collectPackages(unsigned gateIndex) override;
 
 private:
-    unsigned gateCount;
-    std::vector<std::shared_ptr<IClient>> queue;
-    std::vector<std::shared_ptr<IClient>> gate;
-    std::vector<std::shared_ptr<IClient>> clients;
+    unsigned gateCounter;
+    std::vector<std::shared_ptr<IClient>> post_queue;
+    std::vector<std::shared_ptr<IClient>> post_gate;
+    std::vector<std::shared_ptr<IClient>> post_clients;
 
 };
 

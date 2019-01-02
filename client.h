@@ -25,10 +25,10 @@ public:
 
 private:
     std::vector<std::string> packages;
-    std::string m_IdNumber;
-    std::string m_fullName;
-    std::string m_biometricData;
-    int m_priority;
+    std::string client_IdNumber;
+    std::string client_fullName;
+    std::string client_biometricData;
+    int client_priority;
 
 
 };

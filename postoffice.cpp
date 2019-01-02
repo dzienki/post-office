@@ -8,7 +8,7 @@ std::shared_ptr<IPostOffice> IPostOffice::create(unsigned gate_count) {
 }
 
 Postoffice::Postoffice(unsigned gate_count) {
-    this->gateCount=gate_count;
+    this->gateCounter=gate_count;
 
 }
 
@@ -21,7 +21,8 @@ std::vector<std::string> Postoffice::getStatus() {
 }
 
 std::shared_ptr<IClient> Postoffice::getClient(const std::string &identificationNumber) {
-    return std::shared_ptr<IClient>();
+
+    return post_clients;
 }
 
 void Postoffice::enqueueClient(const std::shared_ptr<IClient> &client) {
@@ -35,3 +36,4 @@ void Postoffice::gateReady(unsigned gateIndex) {
 void Postoffice::collectPackages(unsigned gateIndex) {
 
 }
+
