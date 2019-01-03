@@ -15,9 +15,10 @@ public:
     ~Postoffice() override;
     std::vector<std::string> getStatus() override; //done
     std::shared_ptr<IClient> getClient(const std::string &identificationNumber) override; //done
-    void enqueueClient(const std::shared_ptr<IClient> &client) override;
+    void enqueueClient(const std::shared_ptr<IClient> &client) override; //done chyba
     void gateReady(unsigned gateIndex) override;
     void collectPackages(unsigned gateIndex) override;
+    void startqueue();
 
 private:
     unsigned gateCounter;

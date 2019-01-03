@@ -11,6 +11,7 @@ std::shared_ptr<IPostOffice> IPostOffice::create(unsigned gate_count) {
 
 Postoffice::Postoffice(unsigned gate_count) {
     this->gateCounter=gate_count;
+    startqueue();
 }
 
 Postoffice::~Postoffice() {
@@ -33,13 +34,33 @@ std::shared_ptr<IClient> Postoffice::getClient(const std::string &identification
 
 void Postoffice::enqueueClient(const std::shared_ptr<IClient> &client) {
 
+    post_queue.push_back(client);
+    //client->packagesCollected();
+
 }
 
 void Postoffice::gateReady(unsigned gateIndex) {
+    if (post_gate[gateIndex]== nullptr){
+       post_gate.erase(post_gate.begin()+gateIndex);
+      post_gate.insert(post_gate.begin()+gateIndex,post_queue.front());
+    }
 
 }
 
 void Postoffice::collectPackages(unsigned gateIndex) {
+    if(post_gate[gateIndex]!= nullptr){
+        post_gate[gateIndex]->packagesCollected();
+        post_gate.erase(post_gate.begin()+gateIndex);
+        post_gate.insert(post_gate.begin()+gateIndex, nullptr);
+        post_queue.erase(post_queue.begin());
+    }
+}
+
+void Postoffice::startqueue() {
+    post_gate.push_back(nullptr);
+    for(int i=1; i <gateCounter;++i){
+        post_gate.push_back(nullptr);
+    }
 
 }
 
