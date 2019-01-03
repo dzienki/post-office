@@ -5,6 +5,7 @@
 #ifndef POCZTA_POSTOFFICE_H
 #define POCZTA_POSTOFFICE_H
 #include "ipostoffice.h"
+#include "client.h"
 #include <string>
 #include <fstream>
 #include <iostream>
@@ -16,9 +17,9 @@ public:
     std::vector<std::string> getStatus() override; //done
     std::shared_ptr<IClient> getClient(const std::string &identificationNumber) override; //done
     void enqueueClient(const std::shared_ptr<IClient> &client) override; //done chyba
-    void gateReady(unsigned gateIndex) override;
-    void collectPackages(unsigned gateIndex) override;
-    void startqueue();
+    void gateReady(unsigned gateIndex) override; //done
+    void collectPackages(unsigned gateIndex) override; //done
+    void startqueue(); //pomocnicza
 
 private:
     unsigned gateCounter;

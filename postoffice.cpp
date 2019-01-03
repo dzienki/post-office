@@ -19,7 +19,12 @@ Postoffice::~Postoffice() {
 }
 
 std::vector<std::string> Postoffice::getStatus() {
-    return std::vector<std::string>();
+    std::vector<std::string> status;
+    for(auto &i : post_gate){
+        if(i== nullptr) status.emplace_back("");
+        else status.push_back(i->getFullName());
+    }
+    return status;
 }
 
 std::shared_ptr<IClient> Postoffice::getClient(const std::string &identificationNumber) {
@@ -33,8 +38,20 @@ std::shared_ptr<IClient> Postoffice::getClient(const std::string &identification
 }
 
 void Postoffice::enqueueClient(const std::shared_ptr<IClient> &client) {
-
-    post_queue.push_back(client);
+    int j=0;
+    if(post_queue.empty()){
+        post_queue.push_back(client);
+    }
+    else{
+    for(auto &i :post_queue)
+    {
+        if(client->getPriority()>i->getPriority()){
+            post_queue.insert(post_queue.begin()+j,client);
+            break;
+        }
+        j++;
+    }}
+    //post_queue.push_back(client);
     //client->packagesCollected();
 
 }

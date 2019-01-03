@@ -13,7 +13,7 @@ int main() {
         auto post_office = IPostOffice::create(5);
 
         auto client0 = post_office->getClient("96052791813");
-        auto client1 = post_office->getClient("93052753513");
+        auto client1 = post_office->getClient("36052791813");
         auto client2 = post_office->getClient("54100839676");
         auto client3 = post_office->getClient("32100839674");
         auto client4 = post_office->getClient("23100839656");
@@ -60,7 +60,7 @@ int main() {
         client4->newPackage("Moja Paczk");
         client4->newPackage("Moja Pacz");
         client4->newPackage("Moja Pac");
-        client4->updatePriority(5);
+        client4->updatePriority(3);
         client4->updateBiometricData("GGTTGACTA");
 
         client5->setFullName("Kacper Obierzak");
@@ -68,7 +68,7 @@ int main() {
         client5->newPackage("Moja Paczk");
         client5->newPackage("Moja Pacz");
         client5->newPackage("Moja Pac");
-        client5->updatePriority(6);
+        client5->updatePriority(2);
         client5->updateBiometricData("GGTTGACTA");
 
         client6->setFullName("John Smith");
@@ -76,7 +76,7 @@ int main() {
         client6->newPackage("Moja Paczk");
         client6->newPackage("Moja Pacz");
         client6->newPackage("Moja Pac");
-        client6->updatePriority(7);
+        client6->updatePriority(8);
         client6->updateBiometricData("GGTTGACTA");
 
         client7->setFullName("Mia Khalifa");

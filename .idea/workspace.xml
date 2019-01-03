@@ -15,27 +15,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28793f00-4432-4040-a87c-c23c4d7d9cf6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/client.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client.h" beforeDir="false" afterPath="$PROJECT_DIR$/client.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/poczta.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/poczta.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/poczta.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/poczta.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/poczta.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/poczta.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/poczta.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/poczta.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/poczta.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/poczta.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/poczta.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/poczta.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/poczta.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/poczta.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/poczta.dir/main.cpp.obj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/poczta.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/poczta.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/poczta.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/poczta.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/poczta.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/poczta.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/poczta.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/poczta.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/poczta.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/poczta.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/postoffice.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/postoffice.cpp" afterDir="false" />
@@ -65,7 +48,8 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cpp" value="4" />
-          <entry key="h" value="15" />
+          <entry key="h" value="18" />
+          <entry key="tcc" value="1" />
           <entry key="txt" value="2" />
           <entry key="vector" value="1" />
         </counts>
@@ -73,42 +57,33 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="1" />
-          <entry key="ObjectiveC" value="20" />
+          <entry key="ObjectiveC" value="24" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="605" />
-          <entry key="h" value="1465" />
-          <entry key="txt" value="43" />
+          <entry key="cpp" value="1405" />
+          <entry key="h" value="1550" />
+          <entry key="txt" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="8" />
-          <entry key="ObjectiveC" value="2070" />
-          <entry key="PLAIN_TEXT" value="35" />
+          <entry key="ObjectiveC" value="2955" />
+          <entry key="PLAIN_TEXT" value="38" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="72" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            <state relative-caret-position="164">
+              <caret line="107" selection-start-line="107" selection-end-line="107" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -117,10 +92,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr_base.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="1058" selection-start-line="1058" selection-end-line="1058" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1195">
-              <caret line="159" column="50" selection-start-line="159" selection-start-column="50" selection-end-line="159" selection-end-column="50" />
+            <state relative-caret-position="374">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
         </entry>
@@ -128,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            <state relative-caret-position="340">
+              <caret line="20" column="90" lean-forward="true" selection-start-line="20" selection-start-column="90" selection-end-line="20" selection-end-column="90" />
             </state>
           </provider>
         </entry>
@@ -137,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/iclient.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1683">
-              <caret line="99" column="108" selection-start-line="99" selection-start-column="108" selection-end-line="99" selection-end-column="108" />
+            <state relative-caret-position="753">
+              <caret line="104" column="19" lean-forward="true" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
               <folding>
                 <element signature="e#37#54#0" expanded="true" />
               </folding>
@@ -146,11 +130,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/postoffice.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+            <state relative-caret-position="215">
+              <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
               <folding>
                 <element signature="e#44#67#0" expanded="true" />
               </folding>
@@ -161,8 +145,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/postoffice.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+            <state relative-caret-position="357">
+              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
               <folding>
                 <element signature="e#100#124#0" expanded="true" />
               </folding>
@@ -173,8 +157,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ipostoffice.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="30" column="66" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
+            <state relative-caret-position="238">
+              <caret line="29" column="84" lean-forward="true" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="84" />
               <folding>
                 <element signature="e#88#105#0" expanded="true" />
               </folding>
@@ -185,7 +169,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exceptions.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="-67">
               <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
             </state>
           </provider>
@@ -194,7 +178,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exceptions.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="-118">
               <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="20" />
             </state>
           </provider>
@@ -206,6 +190,8 @@
     <findStrings>
       <find>assert</find>
       <find>trace</find>
+      <find>gatecount</find>
+      <find>packagesRetrieved()</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -215,15 +201,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/exceptions.cpp" />
-        <option value="$PROJECT_DIR$/ipostoffice.h" />
         <option value="$PROJECT_DIR$/iclient.h" />
-        <option value="$PROJECT_DIR$/postoffice.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/exceptions.h" />
         <option value="$PROJECT_DIR$/client.h" />
         <option value="$PROJECT_DIR$/client.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/ipostoffice.h" />
         <option value="$PROJECT_DIR$/postoffice.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/postoffice.cpp" />
       </list>
     </option>
   </component>
@@ -234,8 +220,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="532" />
-    <option name="y" value="84" />
+    <option name="x" value="840" />
     <option name="width" value="840" />
     <option name="height" value="1020" />
   </component>
@@ -309,7 +294,7 @@
       <workItem from="1546439172634" duration="493000" />
       <workItem from="1546440977703" duration="19142000" />
       <workItem from="1546524712802" duration="4597000" />
-      <workItem from="1546529370960" duration="5176000" />
+      <workItem from="1546529370960" duration="16727000" />
     </task>
     <task id="LOCAL-00001" summary="pliki h">
       <created>1546442988014</created>
@@ -346,11 +331,25 @@
       <option name="project" value="LOCAL" />
       <updated>1546531208785</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="3">
+      <created>1546534673378</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1546534673378</updated>
+    </task>
+    <task id="LOCAL-00007" summary="4">
+      <created>1546541469978</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1546541469978</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33826000" />
+    <option name="totallyTimeSpent" value="45377000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
@@ -361,13 +360,13 @@
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32890365" />
       <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50061125" side_tool="true" weight="0.32336655" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.502445" side_tool="true" weight="0.45736435" />
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.49938875" weight="0.45736435" />
+      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.49755502" weight="0.45736435" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
       <window_info anchor="bottom" id="Run" order="7" weight="0.32890365" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.39977852" />
+      <window_info active="true" anchor="bottom" id="Debug" order="8" sideWeight="0.49816626" visible="true" weight="0.39977852" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="CMake" order="10" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -410,7 +409,27 @@
     <MESSAGE value="pliki h" />
     <MESSAGE value="w sumie nic nie zrobiłem" />
     <MESSAGE value="3" />
-    <option name="LAST_COMMIT_MESSAGE" value="3" />
+    <MESSAGE value="4" />
+    <option name="LAST_COMMIT_MESSAGE" value="4" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>106</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="client4.get()" />
+        <watch expression="client0" />
+        <watch expression="post_office.get()-&gt;post_gate" />
+        <watch expression="client6" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Temp/is-H6PAH.tmp/editor-test.txt" />
@@ -418,20 +437,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="95" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr_base.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="668" selection-start-line="668" selection-end-line="668" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
         </state>
       </provider>
     </entry>
@@ -449,30 +454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iclient.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1683">
-          <caret line="99" column="108" selection-start-line="99" selection-start-column="108" selection-end-line="99" selection-end-column="108" />
-          <folding>
-            <element signature="e#37#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exceptions.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -480,56 +461,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="299" column="4" selection-start-line="299" selection-start-column="4" selection-end-line="299" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/vector.tcc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="106" column="4" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exceptions.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-118">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr_base.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="1058" selection-start-line="1058" selection-end-line="1058" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iclient.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="104" column="19" lean-forward="true" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
+          <folding>
+            <element signature="e#37#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="90" lean-forward="true" selection-start-line="20" selection-start-column="90" selection-end-line="20" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/exceptions.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="-67">
           <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ipostoffice.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="30" column="66" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
+        <state relative-caret-position="238">
+          <caret line="29" column="84" lean-forward="true" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="84" />
           <folding>
             <element signature="e#88#105#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/postoffice.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+        <state relative-caret-position="357">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding>
             <element signature="e#100#124#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client.cpp">
+    <entry file="file://$PROJECT_DIR$/postoffice.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1195">
-          <caret line="159" column="50" selection-start-line="159" selection-start-column="50" selection-end-line="159" selection-end-column="50" />
+        <state relative-caret-position="215">
+          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+          <folding>
+            <element signature="e#44#67#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/postoffice.cpp">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+        <state relative-caret-position="164">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
           <folding>
-            <element signature="e#44#67#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
