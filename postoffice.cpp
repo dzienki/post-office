@@ -3,6 +3,8 @@
 //
 
 #include "postoffice.h"
+#include "client.h"
+
 std::shared_ptr<IPostOffice> IPostOffice::create(unsigned gate_count) {
     return std::shared_ptr<IPostOffice>(new Postoffice(gate_count));
 }
@@ -21,13 +23,13 @@ std::vector<std::string> Postoffice::getStatus() {
 }
 
 std::shared_ptr<IClient> Postoffice::getClient(const std::string &identificationNumber) {
-//    for(int i=0; i<=post_clients.size();i++){
-//        if(post_clients[i]==identificationNumber){
-//            return post_clients[i];
-//        }
-//    }
+    for (auto &i :post_clients) {
+        if (i->getIdNumber() == identificationNumber)
+            return i;
+    }
     post_clients.push_back(std::shared_ptr<IClient>(new Client(identificationNumber)));
-    return post_clients[post_clients.size()];
+    return post_clients.back();
+
 }
 
 void Postoffice::enqueueClient(const std::shared_ptr<IClient> &client) {

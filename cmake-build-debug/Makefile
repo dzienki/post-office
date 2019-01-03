@@ -122,6 +122,33 @@ poczta/fast:
 	$(MAKE) -f CMakeFiles\poczta.dir\build.make CMakeFiles/poczta.dir/build
 .PHONY : poczta/fast
 
+client.obj: client.cpp.obj
+
+.PHONY : client.obj
+
+# target to build an object file
+client.cpp.obj:
+	$(MAKE) -f CMakeFiles\poczta.dir\build.make CMakeFiles/poczta.dir/client.cpp.obj
+.PHONY : client.cpp.obj
+
+client.i: client.cpp.i
+
+.PHONY : client.i
+
+# target to preprocess a source file
+client.cpp.i:
+	$(MAKE) -f CMakeFiles\poczta.dir\build.make CMakeFiles/poczta.dir/client.cpp.i
+.PHONY : client.cpp.i
+
+client.s: client.cpp.s
+
+.PHONY : client.s
+
+# target to generate assembly for a file
+client.cpp.s:
+	$(MAKE) -f CMakeFiles\poczta.dir\build.make CMakeFiles/poczta.dir/client.cpp.s
+.PHONY : client.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -149,6 +176,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\poczta.dir\build.make CMakeFiles/poczta.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+postoffice.obj: postoffice.cpp.obj
+
+.PHONY : postoffice.obj
+
+# target to build an object file
+postoffice.cpp.obj:
+	$(MAKE) -f CMakeFiles\poczta.dir\build.make CMakeFiles/poczta.dir/postoffice.cpp.obj
+.PHONY : postoffice.cpp.obj
+
+postoffice.i: postoffice.cpp.i
+
+.PHONY : postoffice.i
+
+# target to preprocess a source file
+postoffice.cpp.i:
+	$(MAKE) -f CMakeFiles\poczta.dir\build.make CMakeFiles/poczta.dir/postoffice.cpp.i
+.PHONY : postoffice.cpp.i
+
+postoffice.s: postoffice.cpp.s
+
+.PHONY : postoffice.s
+
+# target to generate assembly for a file
+postoffice.cpp.s:
+	$(MAKE) -f CMakeFiles\poczta.dir\build.make CMakeFiles/poczta.dir/postoffice.cpp.s
+.PHONY : postoffice.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -158,9 +212,15 @@ help:
 	@echo ... poczta
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... client.obj
+	@echo ... client.i
+	@echo ... client.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... postoffice.obj
+	@echo ... postoffice.i
+	@echo ... postoffice.s
 .PHONY : help
 
 

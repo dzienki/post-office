@@ -70,7 +70,7 @@ CMAKE_BINARY_DIR = C:\Users\Sztajer\CLionProjects\poczta\cmake-build-debug
 CMakeFiles/poczta.dir/all:
 	$(MAKE) -f CMakeFiles\poczta.dir\build.make CMakeFiles/poczta.dir/depend
 	$(MAKE) -f CMakeFiles\poczta.dir\build.make CMakeFiles/poczta.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Sztajer\CLionProjects\poczta\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target poczta"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Sztajer\CLionProjects\poczta\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target poczta"
 .PHONY : CMakeFiles/poczta.dir/all
 
 # Include target in all.
@@ -80,7 +80,7 @@ all: CMakeFiles/poczta.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/poczta.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Sztajer\CLionProjects\poczta\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Sztajer\CLionProjects\poczta\cmake-build-debug\CMakeFiles 4
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/poczta.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Sztajer\CLionProjects\poczta\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/poczta.dir/rule

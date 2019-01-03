@@ -6,18 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Sztajer/CLionProjects/poczta/client.cpp
-client.h
-C:/Users/Sztajer/CLionProjects/poczta/client.h
-
-C:/Users/Sztajer/CLionProjects/poczta/client.h
-iclient.h
-C:/Users/Sztajer/CLionProjects/poczta/iclient.h
-
-C:/Users/Sztajer/CLionProjects/poczta/exceptions.cpp
-exceptions.h
-C:/Users/Sztajer/CLionProjects/poczta/exceptions.h
-
 C:/Users/Sztajer/CLionProjects/poczta/exceptions.h
 stdexcept
 -
@@ -39,28 +27,10 @@ C:/Users/Sztajer/CLionProjects/poczta/iclient.h
 C:/Users/Sztajer/CLionProjects/poczta/main.cpp
 iostream
 -
-exceptions.cpp
-C:/Users/Sztajer/CLionProjects/poczta/exceptions.cpp
-postoffice.cpp
-C:/Users/Sztajer/CLionProjects/poczta/postoffice.cpp
-client.cpp
-C:/Users/Sztajer/CLionProjects/poczta/client.cpp
-assert.h
--
-
-C:/Users/Sztajer/CLionProjects/poczta/postoffice.cpp
-postoffice.h
-C:/Users/Sztajer/CLionProjects/poczta/postoffice.h
-
-C:/Users/Sztajer/CLionProjects/poczta/postoffice.h
 ipostoffice.h
 C:/Users/Sztajer/CLionProjects/poczta/ipostoffice.h
-string
+cassert
 -
-fstream
--
-iostream
--
-client.h
-C:/Users/Sztajer/CLionProjects/poczta/client.h
+exceptions.h
+C:/Users/Sztajer/CLionProjects/poczta/exceptions.h
 

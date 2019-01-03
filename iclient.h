@@ -5,6 +5,7 @@
 #include <vector>
 
 
+
 /**
  * @brief The IClient interface encapsulates client behavior.
  */

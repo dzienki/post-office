@@ -11,13 +11,13 @@ class Client: public IClient {
 public:
     explicit Client(const std::string &IdNumber);
     ~Client() override;
-    std::string getIdNumber() override;
-    std::string getFullName() override;
-    int getPriority() override;
-    const std::string &getBiometricData() override;
-    void setFullName(const std::string &fullName) override;
-    void updatePriority(int priority) override;
-    void updateBiometricData(const std::string &biometricData) override;
+    std::string getIdNumber() override; //done
+    std::string getFullName() override; //done
+    int getPriority() override;  //done
+    const std::string &getBiometricData() override; //done
+    void setFullName(const std::string &fullName) override; //done
+    void updatePriority(int priority) override; //done
+    void updateBiometricData(const std::string &biometricData) override; //done
     bool verifyBiometricData(const std::string &biometricData, double threshold) override;
     void newPackage(const std::string &packageId) override;
     std::vector<std::string> awaitingPackages() override;
