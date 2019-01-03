@@ -2,6 +2,7 @@
 // Created by Sztajer on 2018-12-30.
 //
 #include "client.h"
+#include "exceptions.h"
 
 
 std::string Client::getIdNumber() {
@@ -147,7 +148,7 @@ bool Client::verifyBiometricData(const std::string &biometricData, double thresh
 void Client::newPackage(const std::string &packageId) {
     for(auto &i :packages){
         if (i == packageId)
-            throw;
+            throw PackageExistsException("same package");
     }
     this->packages.push_back(packageId);
 }
