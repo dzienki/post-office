@@ -21,9 +21,7 @@ const std::string &Client::getBiometricData() {
     return client_biometricData;
 }
 
-Client::~Client() {
-
-}
+Client::~Client() = default;
 
 Client::Client(const std::string &IdNumber) {
     this->client_IdNumber=IdNumber;
@@ -40,109 +38,76 @@ void Client::updatePriority(int priority) {
 }
 
 void Client::updateBiometricData(const std::string &biometricData) {
+
+    for( char znak: biometricData ) {
+        if( !(znak=='G'||znak=='T'||znak=='C'||znak=='A')) throw IncorrectBiometricDataException("bad DNA");}
     this->client_biometricData=biometricData;
 }
-
+double similarityScore(char a,char b) {
+    return (a == b) ? 3 : -3;
+}
 bool Client::verifyBiometricData(const std::string &biometricData, double threshold) {
-//    double similarityScore(char a, char b)
-//    {
-//        double result;
-//        if(a==b)
-//        {
-//            result=1;
-//        }
-//        else
-//        {
-//            result=penalty;
-//        }
-//        return result;
-//    }
-//
-//    double findMax(double array[], int length)
-//    {
-//        double max = array[0];
-//        ind = 0;
-//
-//        for(int i=1; i<length; i++)
-//        {
-//            if(array[i] > max)
-//            {
-//                max = array[i];
-//                ind=i;
-//            }
-//        }
-//        return max;
-//    }
-//
-//    int main()
-//    {
-//        string seqA; // sequence A
-//        string seqB; // sequence B
-//        cout << "Sequence A" << endl;
-//        cin >> seqA;
-//        cout << "Sequence B" << endl;
-//        cin >> seqB;
-//        cout << "You typed in " << endl << seqA << endl << seqB << endl;
-//
-//        // initialize some variables
-//        int lengthSeqA = seqA.length();
-//        int lengthSeqB = seqB.length();
-//
-//        // initialize matrix
-//        double matrix[lengthSeqA+1][lengthSeqB+1];
-//        for(int i=0;i<=lengthSeqA;i++)
-//        {
-//            for(int j=0;j<=lengthSeqB;j++)
-//            {
-//                matrix[i][j]=0;
-//            }
-//        }
-//
-//        double traceback[4];
-//        int I_i[lengthSeqA+1][lengthSeqB+1];
-//        int I_j[lengthSeqA+1][lengthSeqB+1];
-//
-//
-//        for (int i=1;i<=lengthSeqA;i++)
-//        {
-//            for(int j=0;j<=lengthSeqB;j++)
-//            {
-//                cout << i << " " << j << endl;
-//                traceback[0] = matrix[i-1][j-1]+similarityScore(seqA[i-1],seqB[j-1]);
-//                traceback[1] = matrix[i-1][j]+penalty;
-//                traceback[2] = matrix[i][j-1]+penalty;
-//                traceback[3] = 0;
-//                matrix[i][j] = findMax(traceback,4);
-//            }
-//        }
-//
-//        // print the scoring matrix to console
-//        for(int i=1;i<lengthSeqA;i++)
-//        {
-//            for(int j=1;j<lengthSeqB;j++)
-//            {
-//                cout << matrix[i][j] << " ";
-//            }
-//            cout << endl;
-//        }
-//
-//        // find the max score in the matrix
-//        double matrix_max = 0;
-//        int i_max=0, j_max=0;
-//        for(int i=1;i<lengthSeqA;i++)
-//        {
-//            for(int j=1;j<lengthSeqB;j++)
-//            {
-//                if(matrix[i][j]>matrix_max)
-//                {
-//                    matrix_max = matrix[i][j];
-//                    i_max=i;
-//                    j_max=j;
-//                }
-//            }
-//        }
-//
-       return true;
+    for( char znak: biometricData ) {
+        if( !(znak=='G'||znak=='T'||znak=='C'||znak=='A')) throw IncorrectBiometricDataException("bad DNA");
+}
+
+        // initialize some variables
+        int penalty=2;
+        int lengthSeqA = biometricData.length();
+        int lengthSeqB = client_biometricData.length();
+
+        // initialize matrix
+        double matrix[lengthSeqA+1][lengthSeqB+1];
+        for(int i=0;i<=lengthSeqA;i++)
+        {
+            for(int j=0;j<=lengthSeqB;j++)
+            {
+                matrix[i][j]=0;
+            }
+        }
+
+        double traceback[4];
+
+        for (int i=1;i<=lengthSeqA;i++)
+        {
+            for(int j=0;j<=lengthSeqB;j++)
+            {   double max=0;
+                traceback[0] = matrix[i-1][j-1]+similarityScore(biometricData[i-1],client_biometricData[j-1]);
+                traceback[1] = matrix[i-1][j]+penalty;
+                traceback[2] = matrix[i][j-1]+penalty;
+                traceback[3] = 0;
+                for(int k=1; i<4; i++)
+                {
+                    if(traceback[k] > max)
+                    {
+                        max = traceback[k];
+                    }
+                }
+                matrix[i][j] = max;
+            }
+        }
+
+        // find the max score in the matrix
+        double matrix_max = 0;
+        int i_max=0, j_max=0;
+        for(int i=1;i<lengthSeqA;i++)
+        {
+            for(int j=1;j<lengthSeqB;j++)
+            {
+                if(matrix[i][j]>matrix_max)
+                {
+                    matrix_max = matrix[i][j];
+                    i_max=i;
+                    j_max=j;
+                }
+            }
+        }
+
+    double maxScore = matrix[i_max][j_max];
+    double shorterSequence = (lengthSeqA < lengthSeqB) ? lengthSeqA : lengthSeqB;
+    double normalizedScore = maxScore / shorterSequence;
+
+    return normalizedScore > threshold;
 }
 
 void Client::newPackage(const std::string &packageId) {
@@ -161,4 +126,6 @@ void Client::packagesCollected() {
     packages.erase(packages.begin(),packages.end());
 
 }
+
+
 

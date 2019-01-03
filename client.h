@@ -19,7 +19,7 @@ public:
     void updatePriority(int priority) override; //done
     void updateBiometricData(const std::string &biometricData) override; //done
     bool verifyBiometricData(const std::string &biometricData, double threshold) override;
-    void newPackage(const std::string &packageId) override; //bez exceptation
+    void newPackage(const std::string &packageId) override; //done
     std::vector<std::string> awaitingPackages() override; //done
     void packagesCollected() override; //done
 

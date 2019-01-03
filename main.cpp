@@ -112,7 +112,7 @@ int main() {
         std::cout<<client4->verifyBiometricData("TGTTACGG", 2.0)<<std::endl;
         std::cout<<client5->verifyBiometricData("TGTTACGG", 2.0)<<std::endl;
         std::cout<<client6->verifyBiometricData("TGTTACGG", 2.0)<<std::endl;
-        std::cout<<client7->verifyBiometricData("TGTTACGG", 2.0)<<std::endl;
+        std::cout<<client7->verifyBiometricData("GGTTGACT", 2.0)<<std::endl;
 
         post_office->enqueueClient(client0);
         post_office->enqueueClient(client1);

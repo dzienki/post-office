@@ -3,6 +3,7 @@
 
 CMakeFiles/poczta.dir/client.cpp.obj: ../client.cpp
 CMakeFiles/poczta.dir/client.cpp.obj: ../client.h
+CMakeFiles/poczta.dir/client.cpp.obj: ../exceptions.h
 CMakeFiles/poczta.dir/client.cpp.obj: ../iclient.h
 
 CMakeFiles/poczta.dir/exceptions.cpp.obj: ../exceptions.cpp
@@ -14,6 +15,7 @@ CMakeFiles/poczta.dir/main.cpp.obj: ../ipostoffice.h
 CMakeFiles/poczta.dir/main.cpp.obj: ../main.cpp
 
 CMakeFiles/poczta.dir/postoffice.cpp.obj: ../client.h
+CMakeFiles/poczta.dir/postoffice.cpp.obj: ../exceptions.h
 CMakeFiles/poczta.dir/postoffice.cpp.obj: ../iclient.h
 CMakeFiles/poczta.dir/postoffice.cpp.obj: ../ipostoffice.h
 CMakeFiles/poczta.dir/postoffice.cpp.obj: ../postoffice.cpp
