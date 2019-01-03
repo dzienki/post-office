@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/poczta.dir/main.cpp.obj"
   "CMakeFiles/poczta.dir/client.cpp.obj"
   "CMakeFiles/poczta.dir/postoffice.cpp.obj"
+  "CMakeFiles/poczta.dir/exceptions.cpp.obj"
   "poczta.pdb"
   "poczta.exe"
   "poczta.exe.manifest"

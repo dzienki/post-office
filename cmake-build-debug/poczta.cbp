@@ -88,6 +88,12 @@
 		<Unit filename="C:/Users/Sztajer/CLionProjects/poczta/client.h">
 			<Option target="poczta"/>
 		</Unit>
+		<Unit filename="C:/Users/Sztajer/CLionProjects/poczta/exceptions.cpp">
+			<Option target="poczta"/>
+		</Unit>
+		<Unit filename="C:/Users/Sztajer/CLionProjects/poczta/exceptions.h">
+			<Option target="poczta"/>
+		</Unit>
 		<Unit filename="C:/Users/Sztajer/CLionProjects/poczta/main.cpp">
 			<Option target="poczta"/>
 		</Unit>

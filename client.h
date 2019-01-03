@@ -9,7 +9,7 @@
 
 class Client: public IClient {
 public:
-    explicit Client(const std::string &IdNumber);
+    explicit Client(const std::string &IdNumber); //done
     ~Client() override;
     std::string getIdNumber() override; //done
     std::string getFullName() override; //done
@@ -19,9 +19,9 @@ public:
     void updatePriority(int priority) override; //done
     void updateBiometricData(const std::string &biometricData) override; //done
     bool verifyBiometricData(const std::string &biometricData, double threshold) override;
-    void newPackage(const std::string &packageId) override;
-    std::vector<std::string> awaitingPackages() override;
-    void packagesCollected() override;
+    void newPackage(const std::string &packageId) override; //bez exceptation
+    std::vector<std::string> awaitingPackages() override; //done
+    void packagesCollected() override; //done
 
 private:
     std::vector<std::string> packages;

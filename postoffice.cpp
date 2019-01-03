@@ -11,7 +11,6 @@ std::shared_ptr<IPostOffice> IPostOffice::create(unsigned gate_count) {
 
 Postoffice::Postoffice(unsigned gate_count) {
     this->gateCounter=gate_count;
-
 }
 
 Postoffice::~Postoffice() {

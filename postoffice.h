@@ -11,10 +11,10 @@
 
 class Postoffice: public IPostOffice {
 public:
-    explicit Postoffice(unsigned gate_count);
+    explicit Postoffice(unsigned gate_count); //done
     ~Postoffice() override;
-    std::vector<std::string> getStatus() override;
-    std::shared_ptr<IClient> getClient(const std::string &identificationNumber) override;
+    std::vector<std::string> getStatus() override; //done
+    std::shared_ptr<IClient> getClient(const std::string &identificationNumber) override; //done
     void enqueueClient(const std::shared_ptr<IClient> &client) override;
     void gateReady(unsigned gateIndex) override;
     void collectPackages(unsigned gateIndex) override;

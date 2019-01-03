@@ -5,6 +5,9 @@ CMakeFiles/poczta.dir/client.cpp.obj: ../client.cpp
 CMakeFiles/poczta.dir/client.cpp.obj: ../client.h
 CMakeFiles/poczta.dir/client.cpp.obj: ../iclient.h
 
+CMakeFiles/poczta.dir/exceptions.cpp.obj: ../exceptions.cpp
+CMakeFiles/poczta.dir/exceptions.cpp.obj: ../exceptions.h
+
 CMakeFiles/poczta.dir/main.cpp.obj: ../exceptions.h
 CMakeFiles/poczta.dir/main.cpp.obj: ../iclient.h
 CMakeFiles/poczta.dir/main.cpp.obj: ../ipostoffice.h

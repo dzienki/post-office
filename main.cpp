@@ -2,6 +2,7 @@
 #include "ipostoffice.h"
 #include <cassert>
 #include "exceptions.h"
+#include <vector>
 //#include "postoffice.h"
 //#include "client.h"
 

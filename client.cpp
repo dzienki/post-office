@@ -141,11 +141,15 @@ bool Client::verifyBiometricData(const std::string &biometricData, double thresh
 //            }
 //        }
 //
-//        return false;
+       return true;
 }
 
 void Client::newPackage(const std::string &packageId) {
-
+    for(auto &i :packages){
+        if (i == packageId)
+            throw;
+    }
+    this->packages.push_back(packageId);
 }
 
 std::vector<std::string> Client::awaitingPackages() {
@@ -153,6 +157,7 @@ std::vector<std::string> Client::awaitingPackages() {
 }
 
 void Client::packagesCollected() {
+    packages.erase(packages.begin(),packages.end());
 
 }
 

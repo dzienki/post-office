@@ -149,6 +149,33 @@ client.cpp.s:
 	$(MAKE) -f CMakeFiles\poczta.dir\build.make CMakeFiles/poczta.dir/client.cpp.s
 .PHONY : client.cpp.s
 
+exceptions.obj: exceptions.cpp.obj
+
+.PHONY : exceptions.obj
+
+# target to build an object file
+exceptions.cpp.obj:
+	$(MAKE) -f CMakeFiles\poczta.dir\build.make CMakeFiles/poczta.dir/exceptions.cpp.obj
+.PHONY : exceptions.cpp.obj
+
+exceptions.i: exceptions.cpp.i
+
+.PHONY : exceptions.i
+
+# target to preprocess a source file
+exceptions.cpp.i:
+	$(MAKE) -f CMakeFiles\poczta.dir\build.make CMakeFiles/poczta.dir/exceptions.cpp.i
+.PHONY : exceptions.cpp.i
+
+exceptions.s: exceptions.cpp.s
+
+.PHONY : exceptions.s
+
+# target to generate assembly for a file
+exceptions.cpp.s:
+	$(MAKE) -f CMakeFiles\poczta.dir\build.make CMakeFiles/poczta.dir/exceptions.cpp.s
+.PHONY : exceptions.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -215,6 +242,9 @@ help:
 	@echo ... client.obj
 	@echo ... client.i
 	@echo ... client.s
+	@echo ... exceptions.obj
+	@echo ... exceptions.i
+	@echo ... exceptions.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
