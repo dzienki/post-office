@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Sztajer/CLionProjects/poczta/client.cpp
+client.h
+C:/Users/Sztajer/CLionProjects/poczta/client.h
+exceptions.h
+C:/Users/Sztajer/CLionProjects/poczta/exceptions.h
+iostream
+-
+
+C:/Users/Sztajer/CLionProjects/poczta/client.h
+iclient.h
+C:/Users/Sztajer/CLionProjects/poczta/iclient.h
+
 C:/Users/Sztajer/CLionProjects/poczta/exceptions.h
 stdexcept
 -
@@ -13,26 +25,6 @@ stdexcept
 C:/Users/Sztajer/CLionProjects/poczta/iclient.h
 string
 -
-vector
--
-
-C:/Users/Sztajer/CLionProjects/poczta/ipostoffice.h
-memory
--
-vector
--
-iclient.h
-C:/Users/Sztajer/CLionProjects/poczta/iclient.h
-
-C:/Users/Sztajer/CLionProjects/poczta/main.cpp
-iostream
--
-ipostoffice.h
-C:/Users/Sztajer/CLionProjects/poczta/ipostoffice.h
-cassert
--
-exceptions.h
-C:/Users/Sztajer/CLionProjects/poczta/exceptions.h
 vector
 -
 

@@ -31,7 +31,7 @@ int main() {
         auto post_office = IPostOffice::create(5);
 
         auto client0 = post_office->getClient("96052791813");
-        auto client1 = post_office->getClient("36052791813");
+        auto client1 = post_office->getClient("96052791813");
         auto client2 = post_office->getClient("54100839676");
         auto client3 = post_office->getClient("32100839674");
         auto client4 = post_office->getClient("23100839656");
@@ -50,10 +50,10 @@ int main() {
         client0->updateBiometricData("GGTTGACTA");
 //
         client1->setFullName("Alek Nosal");
-        client1->newPackage("Moja Paczka");
-        client1->newPackage("Moja Paczk");
-        client1->newPackage("Moja Pacz");
-        client1->newPackage("Moja Pac");
+        client1->newPackage("aMoja Paczka");
+        client1->newPackage("aMoja Paczk");
+        client1->newPackage("aMoja Pacz");
+        client1->newPackage("aMoja Pac");
         client1->updatePriority(2);
         client1->updateBiometricData("GGTTGACTA");
 

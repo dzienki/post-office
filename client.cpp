@@ -3,6 +3,7 @@
 //
 #include "client.h"
 #include "exceptions.h"
+#include <iostream>
 
 
 std::string Client::getIdNumber() {
@@ -49,59 +50,58 @@ double similarityScore(char a,char b) {
 bool Client::verifyBiometricData(const std::string &biometricData, double threshold) {
     for( char znak: biometricData ) {
         if( !(znak=='G'||znak=='T'||znak=='C'||znak=='A')) throw IncorrectBiometricDataException("bad DNA");
-}
+    }
 
-        // initialize some variables
-        int penalty=2;
-        int lengthSeqA = biometricData.length();
-        int lengthSeqB = client_biometricData.length();
+    // initialize some variables
+    int penalty=2;
+    int lengthSeqA = this->client_biometricData.length();
+    int lengthSeqB = biometricData.length();
 
-        // initialize matrix
-        double matrix[lengthSeqA+1][lengthSeqB+1];
-        for(int i=0;i<=lengthSeqA;i++)
+    // initialize matrix
+    double matrix[lengthSeqA+1][lengthSeqB+1];
+    for(int i=0;i<=lengthSeqA;i++)
+    {
+        for(int j=0;j<=lengthSeqB;j++)
         {
-            for(int j=0;j<=lengthSeqB;j++)
-            {
-                matrix[i][j]=0;
-            }
+            matrix[i][j]=0;
         }
+    }
 
-        double traceback[4];
+    double traceback[4];
 
-        for (int i=1;i<=lengthSeqA;i++)
-        {
-            for(int j=0;j<=lengthSeqB;j++)
-            {   double max=0;
-                traceback[0] = matrix[i-1][j-1]+similarityScore(biometricData[i-1],client_biometricData[j-1]);
-                traceback[1] = matrix[i-1][j]+penalty;
-                traceback[2] = matrix[i][j-1]+penalty;
-                traceback[3] = 0;
-                for(int k=1; i<4; i++)
+    for (int i=1;i<=lengthSeqA;i++)
+    {
+        for(int j=1;j<=lengthSeqB;j++)
+        {   double max=0;
+            traceback[0] = matrix[i-1][j-1]+similarityScore(this->client_biometricData[i-1],biometricData[j-1]);
+            traceback[1] = matrix[i-1][j]+penalty;
+            traceback[2] = matrix[i][j-1]+penalty;
+            traceback[3] = 0;
+            for (double k : traceback) {
+                if(k > max)
                 {
-                    if(traceback[k] > max)
-                    {
-                        max = traceback[k];
-                    }
-                }
-                matrix[i][j] = max;
-            }
-        }
-
-        // find the max score in the matrix
-        double matrix_max = 0;
-        int i_max=0, j_max=0;
-        for(int i=1;i<lengthSeqA;i++)
-        {
-            for(int j=1;j<lengthSeqB;j++)
-            {
-                if(matrix[i][j]>matrix_max)
-                {
-                    matrix_max = matrix[i][j];
-                    i_max=i;
-                    j_max=j;
+                    max = k;
                 }
             }
+            matrix[i][j] = max;
         }
+    }
+
+    // find the max score in the matrix
+    double matrix_max = 0;
+    int i_max=0, j_max=0;
+    for(int i=1;i<lengthSeqA;i++)
+    {
+        for(int j=1;j<lengthSeqB;j++)
+        {
+            if(matrix[i][j]>matrix_max)
+            {
+                matrix_max = matrix[i][j];
+                i_max=i;
+                j_max=j;
+            }
+        }
+    }
 
     double maxScore = matrix[i_max][j_max];
     double shorterSequence = (lengthSeqA < lengthSeqB) ? lengthSeqA : lengthSeqB;
