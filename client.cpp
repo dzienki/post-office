@@ -53,15 +53,15 @@ bool Client::verifyBiometricData(const std::string &biometricData, double thresh
     }
 
     // initialize some variables
-    int penalty=2;
+    int penalty=-2;
     int lengthSeqA = this->client_biometricData.length();
     int lengthSeqB = biometricData.length();
 
     // initialize matrix
     double matrix[lengthSeqA+1][lengthSeqB+1];
-    for(int i=0;i<=lengthSeqA;i++)
+    for(int i=0;i<lengthSeqA;i++)
     {
-        for(int j=0;j<=lengthSeqB;j++)
+        for(int j=0;j<lengthSeqB;j++)
         {
             matrix[i][j]=0;
         }
@@ -106,6 +106,7 @@ bool Client::verifyBiometricData(const std::string &biometricData, double thresh
     double maxScore = matrix[i_max][j_max];
     double shorterSequence = (lengthSeqA < lengthSeqB) ? lengthSeqA : lengthSeqB;
     double normalizedScore = maxScore / shorterSequence;
+std::cout<< maxScore<<"  "<< normalizedScore << std::endl;
 
     return normalizedScore > threshold;
 }
