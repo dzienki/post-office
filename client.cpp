@@ -106,7 +106,7 @@ bool Client::verifyBiometricData(const std::string &biometricData, double thresh
     double maxScore = matrix[i_max][j_max];
     double shorterSequence = (lengthSeqA < lengthSeqB) ? lengthSeqA : lengthSeqB;
     double normalizedScore = maxScore / shorterSequence;
-std::cout<< maxScore<<"  "<< normalizedScore << std::endl;
+//std::cout<< maxScore<<"  "<< normalizedScore << std::endl;
 
     return normalizedScore > threshold;
 }
